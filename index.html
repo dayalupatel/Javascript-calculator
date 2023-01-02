@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+	<link rel="stylesheet" href="src/styles.css">
+</head>
+
+<body>
+	<!-- the entire body must be written by student -->
+	<div class="container mt-4">
+		<div class="row">
+			<div class="col-lg-6 col-md-10 col-12 mx-auto">
+				<div class="calculator border border-primary-subtle rounded border-2 px-1 py-3">
+					<h4 class="text-secondary fw-bold text-center">CALCULATOR</h4>
+					<div class="container-fluid">
+						<div class="row mb-2">
+							<div class="col-12 mx-auto">
+								<div class="row screen p-2">
+									<input type="text" class="form-control p-2" id="input" placeholder="0">
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="container-fluid">
+						<div class="row mb-1">
+							<div class="col-3 ">
+								<button type="button" class="btn btn-success" id="block7" onclick="addValue(7)">7</button>
+							</div>
+							<div class="col-3 text-center">
+								<button type="button" class="btn btn-success" id="block8" onclick="addValue(8)">8</button>
+							</div>
+							<div class="col-3 text-center">
+								<button type="button" class="btn btn-success" id="block9" onclick="addValue(9)">9</button>
+							</div>
+							<div class="col-3 text-center btn-group">
+								<button type="reset" class="btn btn-danger rounded" id="clr" onclick="clearValue()">C</button>
+								<button type="button" class="btn btn-primary rounded ms-1" id="divide" onclick="addValue('/')">/</button>
+							</div>
+						</div>
+						<div class="row mb-1">
+							<div class="col-3 text-center ">
+								<button type="button" class="btn btn-success" id="block4" onclick="addValue(4)">4</button>
+							</div>
+							<div class="col-3 text-center ">
+								<button type="button" class="btn btn-success " id="block5" onclick="addValue(5)">5</button>
+							</div>
+							<div class="col-3 text-center">
+								<button type="button" class="btn btn-success " id="block6" onclick="addValue(6)">6</button>
+							</div>
+							<div class="col-3 text-center ">
+								<button type="button" class="btn btn-primary" id="multiply" onclick="addValue('*')">*</button>
+							</div>
+						</div>
+						<div class="row mb-1">
+							<div class="col-3 text-center ">
+								<button type="button" class="btn btn-success " id="block1" onclick="addValue(1)">1</button>
+							</div>
+							<div class="col-3 text-center">
+								<button type="button" class="btn btn-success " id="block2" onclick="addValue(2)">2</button>
+							</div>
+							<div class="col-3 text-center ">
+								<button type="button" class="btn btn-success " id="block3" onclick="addValue(3)">3</button>
+							</div>
+							<div class="col-3 text-center">
+								<button type="button" class="btn btn-primary" id="plus" onclick="addValue('+')">+</button>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-3 text-center">
+								<button type="button" class="btn btn-success " id="block0" onclick="addValue(0)">0</button>
+							</div>
+							<div class="col-3 text-center">
+								<button type="button" class="btn btn-success" id="dot" onclick="addValue('.')">.</button>
+							</div>
+							<div class="col-3 text-center">
+								<button type="button" class="btn btn-danger" id="ans" onclick="answer()">Ans</button>
+							</div>
+							<div class="col-3 text-center">
+								<button type="button" class="btn btn-primary" id="minus" onclick="addValue('-')">-</button>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- ENDS -->
+    <script type="text/javascript" src="src/script.js">
+</script>
+
+</body>
+
+</html>
